@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="overflow-x-hidden max-w-[100vw] bg-[--color-bg] text-[--color-text] w-full flex flex-col justify-center items-center h-full"
+  >
+    <header
+      class="bg-white w-full flex justify-between items-center shadow-snipped px-4"
+    >
+      <figure class="w-full">
+        <img src="./assets/logo.png" alt="logo" class="w-16" />
+      </figure>
+      <nav class="flex w-full gap-8 justify-between text-xl">
+        <a href="#inicio">INICIO</a>
+        <a href="#galeria">GALERIA</a>
+        <a href="#sobre">SOBRE</a>
+        <a href="#opcoes">OPÇÕES</a>
+        <a href="#contato">CONTATO</a>
+      </nav>
+    </header>
+    <main class="w-full overflow-x-hidden relative min-h-screen px-4">
+      <section
+        id="inicio"
+        class="w-full h-[600px] max-[900px]:h-[400px] max-[900px]:justify-between flex mt-14 pl-16 gap-5 relative max-[900px]:px-4 max-[900px]:mt-20"
+      >
+        <div
+          class="z-10 w-full min-h-[600px] max-[900px]:min-h-[400px] justify-between max-lg:bg-home relative"
+        >
+          <div class="h-1/2 max-[900px]:h-fit">
+            <h1
+              class="text-[9vw] leading-none max-md:w-44 max-md:translate-y-[-66px] flex flex-col max-[900px]:text-[65px]"
+            >
+              <span>OASIS</span
+              ><span class="max-[900px]:text-white">RADIANT</span>
+            </h1>
+          </div>
+          <div
+            class="h-1/2 max-[900px]:h-[60%] flex flex-col justify-between pt-12 pl-3"
+          >
+            <h2
+              class="max-[900px]:text-white max-[900px]:text-sm text-wrap font-semibold"
+            >
+              Experiência premium de hospedagem, com conforto garantido em cada
+              momento.
+            </h2>
+            <p class="max-w-[500px] max-[900px]:text-white max-[900px]:text-sm">
+              Descubra o refúgio perfeito onde cada estadia se torna uma memória
+              inesquecível. Bem-vindo ao seu santuário de tranquilidade e
+              conforto.
+            </p>
+            <div class="w-full flex justify-between gap-5">
+              <button class="learn-more buttonstyle mt-4">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">RESERVAR</span>
+              </button>
+              <button class="learn-more buttonstyle mt-4">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">LER MAIS</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-home z-0"></div>
+      </section>
+      <div class="w-full flex justify-center items-center my-20 max-md:my-10">
+        <img src="./assets/divider.png" alt="" class="w-80" />
+      </div>
+      <section class="max-w-[1050px] mx-auto pb-32">
+        <h2 class="text-3xl mb-12">GALERIA</h2>
+        <ul class="grid overflow-hidden">
+          <li
+            class="item overflow-hidden item-a relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[70px] group-hover:bottom-0 max-[1050px]:-bottom-[50px] max-[680px]:-bottom-[70px] max-[550px]:-bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade. Com 45 metros quadrados,
+                oferece uma decoração elegante com tons suaves e móveis
+                contemporâneos.
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+          <li
+            class="item overflow-hidden item-b relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[100px] max-[1080px]:-bottom-[67px] max-[850px]:-bottom-[87px] max-[670px]:-bottom-[97px] max-[550px]:-bottom-0 group-hover:bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade.
+                <span class="max-sm:hidden">
+                  Com 45 metros quadrados, oferece uma decoração elegante com
+                  tons suaves e móveis contemporâneos.
+                </span>
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+          <li
+            class="item overflow-hidden item-c relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[100px] max-[1080px]:-bottom-[67px] max-[850px]:-bottom-[87px] max-[670px]:-bottom-[97px] max-[550px]:-bottom-0 group-hover:bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade.
+                <span class="max-sm:hidden">
+                  Com 45 metros quadrados, oferece uma decoração elegante com
+                  tons suaves e móveis contemporâneos.
+                </span>
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+          <li
+            class="item overflow-hidden item-d relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[100px] max-[1080px]:-bottom-[67px] max-[850px]:-bottom-[87px] max-[670px]:-bottom-[97px] max-[550px]:-bottom-0 group-hover:bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade.
+                <span class="max-sm:hidden">
+                  Com 45 metros quadrados, oferece uma decoração elegante com
+                  tons suaves e móveis contemporâneos.
+                </span>
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+          <li
+            class="item overflow-hidden item-e relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[100px] max-[1080px]:-bottom-[67px] max-[850px]:-bottom-[87px] max-[670px]:-bottom-[97px] max-[550px]:-bottom-0 group-hover:bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade.
+                <span class="max-sm:hidden">
+                  Com 45 metros quadrados, oferece uma decoração elegante com
+                  tons suaves e móveis contemporâneos.
+                </span>
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+          <li
+            class="item overflow-hidden item-f hidden relative group overflow-hidden shadow-snipped rounded-md"
+          >
+            <img src="./assets/model.jpg" alt="" />
+            <div
+              class="absolute -bottom-[100px] max-[1080px]:-bottom-[67px] max-[850px]:-bottom-[87px] max-[670px]:-bottom-[97px] max-[550px]:-bottom-0 group-hover:bottom-0 text-white duration-500 ease-linear gradient p-3"
+            >
+              <h4 class="font-semibold max-[500px]:mb-1 mb-4">
+                Suíte Serenidade
+              </h4>
+              <p class="text-xs max-[500px]:text-[10px]">
+                A Suíte Serenidade é um oásis de luxo e conforto, ideal para
+                hóspedes que buscam tranquilidade.
+                <span class="max-sm:hidden">
+                  Com 45 metros quadrados, oferece uma decoração elegante com
+                  tons suaves e móveis contemporâneos.
+                </span>
+              </p>
+            </div>
+            <div
+              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
+            >
+              <button class="rotate-90 text-white p-2">
+                <i class="bx bx-zoom-in text-2xl"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
