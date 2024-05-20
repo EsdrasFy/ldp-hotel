@@ -396,3 +396,7 @@ table {
     opacity: 1;
   }
 }
+swiper-slide{
+  background: url("./assets/model.jpg") center no-repeat;
+  background-size: cover;
+}
