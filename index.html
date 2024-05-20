@@ -20,7 +20,10 @@
       <figure class="w-full">
         <img src="./assets/logo.png" alt="logo" class="w-16" />
       </figure>
-      <nav class="flex w-full gap-8 justify-between text-xl">
+      <figure class="hidden max-sm:block">
+        <img src="./assets/logo.png" alt="logo" class="w-16" />
+      </figure>
+      <nav class="flex w-full gap-8 justify-between text-xl max-sm:hidden">
         <a href="#inicio">INICIO</a>
         <a href="#galeria">GALERIA</a>
         <a href="#sobre">SOBRE</a>
@@ -77,10 +80,10 @@
         <div class="bg-home z-0"></div>
       </section>
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
-        <img src="./assets/divider.png" alt="" class="w-80" />
+        <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
       </div>
-      <section class="max-w-[1050px] mx-auto pb-32">
-        <h2 class="text-3xl mb-12">GALERIA</h2>
+      <section class="max-w-[1050px] mx-auto">
+        <h2 class="text-3xl mb-12 max-sm:text-center">GALERIA</h2>
         <ul class="grid overflow-hidden">
           <li
             class="item overflow-hidden item-a relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
@@ -244,6 +247,119 @@
           </li>
         </ul>
       </section>
+      <div class="w-full flex justify-center items-center my-20 max-md:my-10">
+        <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
+      </div>
+      <section class="max-w-[1050px] mx-auto">
+        <h2 class="text-3xl mb-12 max-sm:text-center">QUEM SOMOS?</h2>
+        <div class="w-full flex flex-col gap-4 max-sm:text-sm">
+          <p class="text-center">
+            Bem-vindo ao Oasis Radiant, um refúgio de luxo e tranquilidade onde
+            cada detalhe é pensado para proporcionar uma experiência única.
+            Localizado em uma paisagem deslumbrante, nosso hotel combina
+            elegância moderna com a beleza natural ao redor.
+          </p>
+          <p class="text-center">
+            No Oasis Radiant, acreditamos que a hospitalidade vai além de
+            hospedar. Nossa missão é criar um ambiente acolhedor e sofisticado,
+            onde nossos hóspedes se sintam em casa. Nossa equipe dedicada está
+            pronta para atender todas as suas necessidades com cordialidade.
+          </p>
+          <p class="max-sm:hidden">
+            Nossos quartos e suítes oferecem conforto e estilo, com comodidades
+            modernas e vistas panorâmicas. Desfrute de nossa culinária refinada
+            no restaurante, preparada com ingredientes frescos e locais.
+          </p>
+
+          <p class="max-sm:hidden">
+            Relaxe em nosso spa de classe mundial, mergulhe na piscina
+            cristalina ou explore as atividades ao ar livre. No Oasis Radiant,
+            cada momento é pensado para criar memórias duradouras. Venha
+            descobrir o verdadeiro significado de luxo e hospitalidade no Oasis
+            Radiant – seu oásis de tranquilidade e esplendor.
+          </p>
+        </div>
+      </section>
+      <span
+        class="w-full flex justify-center items-center my-10 max-md:my-5"
+      ></span>
+      <section class="max-w-[1050px] mx-auto">
+        <h2 class="text-3xl mb-12 max-sm:text-center">VANTAGENS</h2>
+        <div
+          class="w-full flex justify-between gap-10 max-sm:flex-wrap max-sm:gap-4"
+        >
+          <div class="flex flex-col items-center gap-10 max-sm:gap-4">
+            <div
+              class="text-5xl max-sm:text-2xl p-4 max-sm:px-3 max-sm:py-2 text-white bg-[var(--color-two)] rounded-full"
+            >
+              <i class="bx bx-map-pin"></i>
+            </div>
+            <div class="text-center max-sm:w-40">
+              <p class="text-sm max-sm:hidden">
+                Localizado no coração de São Paulo, o Oasis Radiant oferece
+                fácil acesso aos principais pontos turísticos, culturais e de
+                negócios da cidade, proporcionando conveniência e conectividade.
+              </p>
+              <p class="text-sm hidden max-sm:inline max-sm:text-xs">
+                No coração de São Paulo, oferecemos acesso conveniente aos
+                principais pontos da cidade.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-10 max-sm:gap-4">
+            <div
+              class="text-5xl max-sm:text-2xl p-4 max-sm:px-3 max-sm:py-2 text-white bg-[var(--color-two)] rounded-full"
+            >
+              <i class="bx bx-check-shield"></i>
+            </div>
+            <div class="text-center max-sm:w-40">
+              <p class="text-sm max-sm:hidden">
+                Garantimos a sua tranquilidade com segurança 24 horas, sistemas
+                avançados de vigilância e equipe treinada, para que você possa
+                aproveitar sua estadia sem preocupações.
+              </p>
+              <p class="text-sm hidden max-sm:inline max-sm:text-xs">
+                Com vigilância avançada e equipe treinada, garantimos sua
+                tranquilidade durante sua estadia.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-10 max-sm:gap-4 max-sm:mt-5">
+            <div
+              class="text-5xl max-sm:text-2xl p-4 max-sm:px-3 max-sm:py-2 text-white bg-[var(--color-two)] rounded-full"
+            >
+              <i class="bx bx-bowl-hot"></i>
+            </div>
+            <div class="text-center max-sm:w-40">
+              <p class="text-sm max-sm:hidden">
+                Nossa equipe dedicada está sempre pronta para atender todas as
+                suas necessidades com cordialidade e eficiência, garantindo uma
+                experiência personalizada e inesquecível.
+              </p>
+              <p class="text-sm hidden max-sm:inline max-sm:text-xs">
+                Nossa equipe cordial está sempre pronta para tornar sua
+                experiência única e memorável.
+              </p>
+            </div>
+          </div>
+          <div class="hidden max-sm:flex flex-col items-center gap-10 max-sm:gap-4 mt-5">
+            <div
+              class="text-5xl max-sm:text-2xl p-4 max-sm:px-3 max-sm:py-2 text-white bg-[var(--color-two)] rounded-full"
+            >
+              <i class="bx bx-check-shield"></i>
+            </div>
+            <div class="text-center max-sm:w-40">
+              <p class="text-sm hidden max-sm:inline max-sm:text-xs">
+                Com vigilância avançada e equipe treinada, garantimos sua
+                tranquilidade durante sua estadia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="w-full flex justify-center items-center my-20 max-md:my-10">
+        <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
+      </div>
     </main>
   </body>
 </html>
