@@ -37,9 +37,7 @@
       <figure class="w-full">
         <img src="./assets/logo.png" alt="logo" class="w-16" />
       </figure>
-      <figure class="hidden max-sm:block">
-        <img src="./assets/logo.png" alt="logo" class="w-16" />
-      </figure>
+
       <nav class="flex w-full gap-8 justify-between text-xl max-sm:hidden">
         <a href="#inicio">INICIO</a>
         <a href="#galeria">GALERIA</a>
@@ -47,6 +45,13 @@
         <a href="#opcoes">OPÇÕES</a>
         <a href="#contato">CONTATO</a>
       </nav>
+
+      <button
+        id="openDrawerButton"
+        class="hidden max-sm:block btn btn-primary text-3xl"
+      >
+        <i class="bx bx-menu"></i>
+      </button>
     </header>
     <main class="w-full overflow-x-hidden relative min-h-screen px-4">
       <section
@@ -99,7 +104,7 @@
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
         <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
       </div>
-      <section class="max-w-[1050px] mx-auto">
+      <section class="max-w-[1050px] mx-auto" id="galeria">
         <h2 class="text-3xl mb-12 max-sm:text-center">GALERIA</h2>
         <ul class="grid overflow-hidden">
           <li
@@ -118,13 +123,6 @@
                 oferece uma decoração elegante com tons suaves e móveis
                 contemporâneos.
               </p>
-            </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
             </div>
           </li>
           <li
@@ -146,13 +144,6 @@
                 </span>
               </p>
             </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
-            </div>
           </li>
           <li
             class="item overflow-hidden item-c relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
@@ -172,13 +163,6 @@
                   tons suaves e móveis contemporâneos.
                 </span>
               </p>
-            </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
             </div>
           </li>
           <li
@@ -200,13 +184,6 @@
                 </span>
               </p>
             </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
-            </div>
           </li>
           <li
             class="item overflow-hidden item-e relative bottom-0 group overflow-hidden shadow-snipped rounded-md"
@@ -226,13 +203,6 @@
                   tons suaves e móveis contemporâneos.
                 </span>
               </p>
-            </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
             </div>
           </li>
           <li
@@ -254,20 +224,13 @@
                 </span>
               </p>
             </div>
-            <div
-              class="absolute -top-1 -right-10 group-hover:-translate-x-[40px] duration-500 ease-linear gradient -rotate-90 max-sm:right-0"
-            >
-              <button class="rotate-90 text-white p-2">
-                <i class="bx bx-zoom-in text-2xl"></i>
-              </button>
-            </div>
           </li>
         </ul>
       </section>
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
         <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
       </div>
-      <section class="max-w-[1050px] mx-auto">
+      <section class="max-w-[1050px] mx-auto" id="sobre">
         <h2 class="text-3xl mb-12 max-sm:text-center">QUEM SOMOS?</h2>
         <div class="w-full flex flex-col gap-4 max-sm:text-sm">
           <p class="max-sm:text-center">
@@ -381,7 +344,7 @@
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
         <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
       </div>
-      <section class="max-w-[1050px] mx-auto">
+      <section class="max-w-[1050px] mx-auto" id="opcoes">
         <h2 class="text-3xl mb-12 max-sm:text-center">DORMITORIOS</h2>
 
         <swiper-container
@@ -394,38 +357,38 @@
         >
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-            ></swiper-slide>
+          ></swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-            ></swiper-slide>
-          <swiper-slide
-            class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-          >
-            </swiper-slide>
+          ></swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
+          <swiper-slide
+            class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
+          >
+          </swiper-slide>
         </swiper-container>
       </section>
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
@@ -444,44 +407,44 @@
         >
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-            ></swiper-slide>
+          ></swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-            ></swiper-slide>
-          <swiper-slide
-            class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
-          >
-            </swiper-slide>
+          ></swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
           <swiper-slide
             class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
           >
-            </swiper-slide>
+          </swiper-slide>
+          <swiper-slide
+            class="bg-white w-full h-full object-fit rounded-md min-w-[150px] min-h-[300px] max-sm:min-h-[200px]"
+          >
+          </swiper-slide>
         </swiper-container>
       </section>
       <div class="w-full flex justify-center items-center my-20 max-md:my-10">
         <img src="./assets/divider.png" alt="" class="w-80 max-sm:w-44" />
       </div>
-      <section class="max-w-[1050px] mx-auto">
+      <section class="max-w-[1050px] mx-auto" id="contato">
         <h2 class="text-3xl mb-12 max-sm:text-center">
           LOCALIZAÇÃO & ATENDIMENTO
         </h2>
@@ -602,6 +565,67 @@
         </div>
       </div>
     </footer>
+    <div id="drawer" class="drawer shadow-snipped">
+      <button id="closeDrawerButton" class="close-btn text-xl text-black">
+        <i class="bx bx-x"></i>
+      </button>
+      <nav
+        class="flex flex-col w-full py-2 gap-8 justify-between text-sm font-semibold"
+      >
+        <a
+          class="w-full hover:bg-[#333] hover:text-white rounded-md duration-300 ease-linar py-2 px-3"
+          href="#inicio"
+          >INICIO</a
+        >
+        <a
+          class="w-full hover:bg-[#333] hover:text-white rounded-md duration-300 ease-linar py-2 px-3"
+          href="#galeria"
+          >GALERIA</a
+        >
+        <a
+          class="w-full hover:bg-[#333] hover:text-white rounded-md duration-300 ease-linar py-2 px-3"
+          href="#sobre"
+          >SOBRE</a
+        >
+        <a
+          class="w-full hover:bg-[#333] hover:text-white rounded-md duration-300 ease-linar py-2 px-3"
+          href="#opcoes"
+          >OPÇÕES</a
+        >
+        <a
+          class="w-full hover:bg-[#333] hover:text-white rounded-md duration-300 ease-linar py-2 px-3"
+          href="#contato"
+          >CONTATO</a
+        >
+      </nav>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const drawer = document.getElementById("drawer");
+        const openDrawerButton = document.getElementById("openDrawerButton");
+        const closeDrawerButton = document.getElementById("closeDrawerButton");
+        const overlay = document.getElementById("overlay");
+
+        openDrawerButton.addEventListener("click", function () {
+          drawer.classList.add("open");
+          overlay.classList.add("visible");
+        });
+
+        closeDrawerButton.addEventListener("click", function () {
+          drawer.classList.remove("open");
+          overlay.classList.remove("visible");
+        });
+
+        overlay.addEventListener("click", function () {
+          drawer.classList.remove("open");
+          overlay.classList.remove("visible");
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
